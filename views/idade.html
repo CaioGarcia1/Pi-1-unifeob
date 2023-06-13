@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercicio</title>
+    <link rel="stylesheet" type="text/css" href="css/idade/style.css" />
+</head>
+<body>
+    <header>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href='/'>Inicio</a></li>
+                <li><a class='dropdown-arrow'>Serviços</a>
+                <ul class='sub-menus'>
+                    <li><a href='/idade'>Verificador de idade</a></li>
+                    <li><a href='/horario'>Período atual</a></li>
+                </ul>
+                </li>
+            </ul>
+        </nav>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de nascimento: 
+                <input type="number" id="txtano" min="0">
+            </p>
+            <p>
+                Sexo: 
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+                <p>
+                    <div id="botao">
+                    <input type="button" id="buttonbonito" onclick="verificar()" value="Verificar">
+                    </div>
+                </p>
+            </p>
+            
+        </div>
+        <div id="res">
+            Preencha os dados acima
+        </div>
+    </section>
+    <script src="js/idade/script.js"></script>
+</body>
+</html>
